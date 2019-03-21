@@ -93,348 +93,43 @@ window.gon={};
             <button class="btn btn-default btn-sm btn-top" id="btn-sdk-download-info">
               <strong>뷰티넷 바로가기</strong></button>
           </a>
-		 <div id="guide_feedback">
-          <hr class="separator"/>
-          <span>관련 파일들은 구글 드라이브에 올려두었습니다. (권한 요청 :  온라인개발팀 - 윤용민 차장 )</span>
-          <span>경로 : 뷰티넷리뉴얼 > 에이블씨엔씨 > 프로젝트 초기셋팅</span>
-         </div>
           <div class="bs-callout bs-callout-warning">
             <p><span>목차</span><br></p>
             <ul>
+              <li>단말기 매체신청서 / 보안서약서 작성</li>
               <li>IP 설정</li>
-              <li>자산관리 설치</li>
+              <li>자산관리 프로그램 설치</li>
               <li>백신 설치</li>
               <li>뷰티톡 설치</li>
               <li>프린트 연결</li>
             </ul>
           </div>
+          <div id="guide_feedback">
+	          <hr class="separator"/>
+	          <span>관련 파일들은 구글 드라이브에 올려두었습니다. (권한 요청 :  온라인개발팀 - 윤용민 차장님)</span><br/>
+	          <span>경로 : 뷰티넷리뉴얼 > 에이블씨엔씨 > 프로젝트 초기셋팅</span>
+         </div>
           <section id="g_android_sdk">
-            <h4>1. IP 설정</h4>
-            <p>백오피스는 모든 사용자에게 접근을 허용하지 않기에 별도의 방화벽 신청이 필요합니다.</p>
-            <h5>1) 그룹웨어 전자결재 > 방화벽 신청</h5>
-            <p>전자결재 > 전산 > 방화벽정책등록/변경 신청서</p>
-
-            <h5>2) 개인정보 입력 </h5>
-              <p>① 항목에 맞게 빈칸을 모두 채워 줍니다.</p>
-              <p style="color:red"><strong>② 사용자 IP의 경우 개인 IP를 작성 해주시기 바랍니다.</strong></p>
-              <p>③ 백오피스방화벽 신청서의 경우 어플리케이션 정책란은 공란으로 두셔야 됩니다.</p>
-              <p>④ <strong>결제라인</strong> : 각 팀장 // <strong>접수자</strong> : 인포테크실 김철환 차장</p>
-            <p><img src="images/ip.JPG" width="640"/></p>
-
-            <h5>3) 신청할 방화벽 IP </h5>
-            <p>
-              필요한 방화벽 범위를 맞게 복사하여 붙여 넣어 주시기 바랍니다.　
-              <a href="https://s3-ap-northeast-1.amazonaws.com/userhabit-production/sdks/userhabitsdk_1.1.7.aar" data-uhga-action="안드로이드" data-uhga-label="다운로드">
-                <button class="btn btn-default btn-sm" id="btn-sdk-download-info">
-                  <strong>개발 서버란?</strong></button>
-              </a>
-            </p>
-            <div>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active download">
-                    <a href="#sdk-download-android" role="tab" data-toggle="tab" data-uhga-action="안드로이드" data-uhga-label="기본">기본 IP</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="#sdk-gradle" role="tab" data-toggle="tab" data-uhga-action="안드로이드" data-uhga-label="개발서버 포함">개발서버 포함 IP</a>
-                  </li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="sdk-download-android">
-                    <table width="640" style="font-size: 10pt; border-collapse: collapse;" cellspacing="0">
-                      <tbody>
-                      <tr>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); width: 15%; height: 25px; text-align: center;" rowspan="1" colspan="1">IP별 정책</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); padding: 0px; width: 15%; height: 25px; text-align: center;">시스템명</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); padding: 0px; width: 20%; height: 25px; text-align: center;">IP</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(192, 189, 189); padding: 0px; width: 8%; height: 25px; text-align: center;">서비스<br>(포트)</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(192, 189, 189); padding: 0px; width: 17%; height: 25px; text-align: center;" rowspan="1" colspan="2">처리구분</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); padding: 0px; width: 25%; height: 25px; text-align: center;">용도</td>
-                      </tr>
-                      </tbody>
-                    </table>
-                    <table width="640" style="font-size: 10pt; border-collapse: collapse;" cellspacing="0">
-                      <tbody>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;1
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.249
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            80
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[4]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[4]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 1번 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;2
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.249
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            443
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[5]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[5]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 1번 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;3
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO2
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.230
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            80
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[6]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[6]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 2 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;4
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO2
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.230
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            443
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[7]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[7]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 2 서버
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div role="tabpanel" class="tab-pane" id="sdk-gradle">
-                    <table width="640" style="font-size: 10pt; border-collapse: collapse;" cellspacing="0">
-                      <tbody>
-                      <tr>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); width: 15%; height: 25px; text-align: center;" rowspan="1" colspan="1">IP별 정책</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); padding: 0px; width: 15%; height: 25px; text-align: center;">시스템명</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); padding: 0px; width: 20%; height: 25px; text-align: center;">IP</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(192, 189, 189); padding: 0px; width: 8%; height: 25px; text-align: center;">서비스<br>(포트)</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(192, 189, 189); padding: 0px; width: 17%; height: 25px; text-align: center;" rowspan="1" colspan="2">처리구분</td>
-                        <td class="_header" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(169, 169, 169); padding: 0px; width: 25%; height: 25px; text-align: center;">용도</td>
-                      </tr>
-                      </tbody>
-                    </table>
-                    <table width="640" style="font-size: 10pt; border-collapse: collapse;" cellspacing="0">
-                      <tbody>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;1
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            brpwas
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            192.168.250.3
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            80
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[0]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[0]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            개발 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;2
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            brpwas
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            192.168.250.3
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            443
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[1]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[1]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            개발 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;3
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            FOWEB0
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.228
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            80
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[2]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[2]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            스테이지 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;4
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            FOWEB0
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.228
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            443
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[3]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[3]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            스테이지 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;5
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.249
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            80
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[4]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[4]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 1번 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;6
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.249
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            443
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[5]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[5]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 1번 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;7
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO2
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.230
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            80
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[6]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[6]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 2 서버
-                          </td>
-                        </tr>
-                        <tr height="30">
-                          <td class="_header" style="border: 1px solid rgb(192, 189, 189); width: 15%; text-align: center; padding: 2px;" rowspan="1" colspan="1">
-                            &nbsp;8
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 15%; height: 25px; padding: 2px;">
-                            BO2
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 20%; height: 25px; padding-right: 2px; padding-left: 2px;">
-                            211.239.167.230
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 8%; height: 25px; padding: 2px;">
-                            443
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 17%; height: 25px; padding: 2px;" rowspan="1" colspan="2">
-                            <input type="checkbox" name="CHK_Y4[7]" value="CHK_Y4" onclick="checkboxStatus(this);" id="CHK_Y4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc7430e1715405a6f78af4a30828      " checked="checked" disabled=""><span id="CHK_Y4">허용/
-                            <input type="checkbox" name="CHK_N4[7]" value="CHK_N4" onclick="checkboxStatus(this);" id="CHK_N4" taskno="1" msgid="" nullyn="N" attrid="TEMP_ATTR_ID" uuid="    ACN1FO6451dc8a30e1715405a6f78a2cd93b41      " disabled=""><span id="CHK_N4">차단</span></span>
-                          </td>
-                          <td style="border: 1px solid rgb(169, 169, 169); width: 25%; height: 25px; padding: 2px;">
-                            BO 2 서버
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-          </section>
-          <section id="g_android_custom">
-            <h4>2. 최종 작성 화면</h4>
-            <img src="images/firewall3.JPG" width="700"/>
+            <h4>1. 단말기 매체신청서 / 보안서약서 작성</h4>
+              <h5>1) 단말기 매체신청서 / 보안서약서 작성</h5>
+              <p>담당자 서류 전달</p>
+            <h4>2. IP 설정</h4>
+              <h5>1) IP 설정</h5>
+              <p>IP 정보 입력 (이니어스__인력투입정보.xlsx 2번 시트 참고)</p>
+              <p><img src="images/ip2.PNG" width="472"/></p>
+            <h4>3. 자산관리 프로그램</h4>
+              <h5>1) 운영체제에 맞는 파일을 설치 (32bit or 64bit)</h5>
+              <h5>2) 계정 등록</h5>
+               <p>계정 정보 입력 (이니어스__인력투입정보.xlsx 2번 시트 참고)</p>
+               <p><img src="images/netHelperExample.PNG" width="451"/></p>
+            <h4>4. 백신설치</h4>
+              <h5>1) 안랩 (AGsetupBG.exe)</h5>
+              <h5>2) 카스퍼스키 (KES10MR4.exe)</h5>
+            <h4>5. 뷰티톡 (자사 메신저 프로그램)</h4>
+              <h5>1) 설치</h5>
+              <p>BeautyTalk_windows_1_0.exe 파일 참고</p>
+              <h5>2) 로그인</h5>
+              <p>계정, 초기비밀번호 (이니어스__인력투입정보.xlsx)</p>
           </section>
         </section>
         <div id="guide_feedback">
