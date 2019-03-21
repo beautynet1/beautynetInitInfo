@@ -9,13 +9,13 @@ window.gon={};
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
-    <title>뷰티넷</title>
+    <title>뷰티넷 초기셋팅</title>
 
-    <meta property="og:url" content="http://bo.beautynet.co.kr/">
-    <meta property="og:title" content="백오피스">
+    <meta property="og:url" content="https://beautynet1.github.io/beautynetInitInfo/">
+    <meta property="og:title" content="뷰티넷 초기셋팅">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/logo_meta_tag-bb54be7f964c0ce15619ae3fc10a03516ff99e87fdec56e05e9e77e77ab4b9ea.png">
-    <meta property="og:description" content="뷰티넷 백오피스">
+    <meta property="og:description" content="뷰티넷 초기셋팅">
 
     <meta name="description" content="백오피스">
     <link href="../favicon.ico" rel="shortcut icon" />
@@ -48,17 +48,19 @@ window.gon={};
 
     <div class="main-container">
       <div id="guide_main">
+      	<!-- 좌메뉴 Str -->
         <div class="col-md-2 left-nav">
         <ul class="affix left-ul" data-spy="affix" data-offset-top="0">
           <li>
-            <label>가이드라인</label>
+            <label>초기 셋팅 가이드</label>
             <ul class="group-list">
-              <li><a id="gl_start_btn" class="doc-nav-btn" href="index.html">방화벽 신청</a></li>
-              <li><a id="gl_report_btn" class="doc-nav-btn" href="part1/idInfo.html">백오피스 계정 신청</a></li>
+              <li><a id="gl_start_btn" class="doc-nav-btn" href="index.html">기본 셋팅</a></li>
+              <li><a id="gl_report_btn" class="doc-nav-btn" href="part1/idInfo.html">개발자 셋팅</a></li>
               <li><a id="gl_report_btn" class="doc-nav-btn" href="part1/hostInfo.html">호스트 변경</a></li>
               </li>
             </ul>
           </li><br>
+          <!-- 
           <li>
             <label>html 가이드</label>
             <ul class="group-list">
@@ -78,70 +80,27 @@ window.gon={};
           <li>
             <a id="sdk_history_btn" class="doc-nav-btn labeling" href="/ko/documentations/glossary">용어집</a>
           </li>
+           -->
         </ul>
       </div>
+	  <!-- 좌메뉴 End -->
 
-      <div class="col-md-2 col-xs-12 dropdown drop-nav">
-        <button class="btn btn-default dropdown-toggle btn-drop" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-          목록
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li role="presentation" class="dropdown-header">가이드라인</li>
-          <li role="presentation"><a id="gl_start_btn" class="doc-nav-btn" role="menuitem" tabindex="-1" href="/ko/documentations/guideline_start">시작하기</a></li>
-          <li role="presentation"><a id="gl_report_btn" class="doc-nav-btn" href="/ko/documentations/guideline_report">분석 보고서</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation" class="dropdown-header">SDK Doc</li>
-          <li role="presentation"><a id="guide_android_btn" class="doc-nav-btn" href="/ko/documentations/sdk_android">안드로이드</a></li>
-          <li role="presentation"><a id="guide_ios_btn" class="doc-nav-btn" href="/ko/documentations/sdk_ios_swift">iOS (Swift)</a></li>
-          <li role="presentation"><a id="guide_ios_btn" class="doc-nav-btn" href="/ko/documentations/sdk_ios_obc">iOS (Objective-C)</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a id="sdk_history_btn" class="doc-nav-btn labeling" href="/ko/documentations/sdk_update">업데이트 히스토리</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a id="sdk_history_btn" class="doc-nav-btn labeling" href="/ko/documentations/faq">FAQ</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a id="sdk_history_btn" class="doc-nav-btn labeling" href="/ko/documentations/glossary">용어집</a></li>
-        </ul>
-      </div>
-
-      <script>
-          $(function(){
-              $(".dropdown-menu li a").click(function(){
-                  $('.btn-drop').html($(this).text()+ ' <span class="caret"></span>');
-                  $('.btn-drop').val($(this).text());
-
-              });
-          });
-      </script>
-
-      <div class="col-md-2 col-xs-12 subnav">
-        <ul class="affix-top right-ul" data-spy="affix" data-offset-top="0">
-          <label>CONTENTS</label>
-          <li>
-            <a href="#guide_android" class="jumper" data-uhga-action="안드로이드" data-uhga-label="스크롤 데이터 추적하기">백오피스 가이드</a>
-          </li>
-          <li>
-            <a href="#g_android_sdk" class="jumper" data-uhga-action="안드로이드" data-uhga-label="방화벽 신청">방화벽 신청</a>
-          </li>
-          <li>
-            <a href="#g_android_custom" class="jumper" data-uhga-action="안드로이드" data-uhga-label="최종 작성 화면">최종 작성 화면</a>
-          </li>
-        </ul>
-      </div>
-
+	  <!-- 본문 Str -->
       <div class="col-md-8 col-xs-12 contents">
         <section id="guide_android" class="main-section">
-          <h3>뷰티넷 백오피스 가이드</h3>
-          <a href="http://bo.beautynet.co.kr/" data-uhga-action="안드로이드" data-uhga-label="다운로드">
+          <h3>초기셋팅 가이드</h3>
+          <a href="http://www.beautynet.co.kr/" data-uhga-action="안드로이드" data-uhga-label="다운로드">
             <button class="btn btn-default btn-sm btn-top" id="btn-sdk-download-info">
-              <strong>BackOffice 바로가기</strong></button>
+              <strong>뷰티넷 바로가기</strong></button>
           </a>
-          <p><strong>백오피스란 뷰티넷을 관리하기 위한 관리자 사이트입니다.</strong><br/></p>
           <div class="bs-callout bs-callout-warning">
-            <p><span>주의!</span>백오피스에 접근하기 위해서는 다음과 같은 사항들이 필요합니다.<br></p>
+            <p><span>목차</span><br></p>
             <ul>
-              <li>방화벽 신청</li>
-              <li>백오피스 계정 신청</li>
+              <li>IP 설정</li>
+              <li>자산관리 설치</li>
+              <li>백신 설치</li>
+              <li>뷰티톡(자사메신저) 설치</li>
+              <li>프린트 연결</li>
             </ul>
           </div>
 
