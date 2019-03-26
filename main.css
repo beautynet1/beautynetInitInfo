@@ -9632,7 +9632,7 @@ body.documentations .bs-callout span {
 }
 
 body.documentations .bs-callout ul {
-    margin-left: 36px;
+    margin-left: 0px;
     line-height: 2;
     margin-bottom: 3px
 }
